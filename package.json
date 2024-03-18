@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "cy:report": "node ./cypress/report.js",
+    "cy:testReport": "npx cypress run --browser chrome --spec ./cypress/e2e/Tests/**.feature ; npm run cy:report"
+  },
+  "devDependencies": {
+    "cypress": "^13.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^3.6.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "cucumberJson": {
+      "generate": true
+    },
+    "step_definitions": "cypress/e2e/Tests"
+  }
+}

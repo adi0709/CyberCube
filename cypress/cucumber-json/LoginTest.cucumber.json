@@ -1,0 +1,144 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "I want to login into the site with valid data",
+    "line": 1,
+    "id": "i-want-to-login-into-the-site-with-valid-data",
+    "tags": [],
+    "uri": "LoginTest.feature",
+    "elements": [
+      {
+        "id": "i-want-to-login-into-the-site-with-valid-data;log-into-the-system-with-correct-user-data",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Log into the system with correct user data",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the Website",
+            "result": {
+              "status": "passed",
+              "duration": 534000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "standard_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I entered valid credential",
+            "result": {
+              "status": "passed",
+              "duration": 563000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User click on sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 88000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "The user is successfully logged in",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "i-want-to-login-into-the-site-with-valid-data;log-into-the-system-with-incorrect-user-data",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Log into the system with Incorrect user data",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I navigate to the Website",
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "vpassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "locked_out_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I entered invalid credential",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n\nhttps://on.cypress.io/type\n    at Context.type (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:114411:68)\n    at wrapped (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:138387:19)\nFrom Your Spec Code:\n    at LoginPage.enterUserNamePassword (cypress/e2e/Pages/loginPage.js:15:13)\n    at eval (cypress/e2e/Tests/LoginTest/loginTest.cy.js:21:14)\nat Array.forEach (<anonymous>)\n    at Context.eval (cypress/e2e/Tests/LoginTest/loginTest.cy.js:20:23)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User click on sign in button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "The user is unable to login",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
