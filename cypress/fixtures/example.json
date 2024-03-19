@@ -1,5 +1,16 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "products":[
+    {
+      "productName":"Sauce Labs Backpack",
+      "productPrice":"$29.99"
+    },
+    {
+      "productName":"Sauce Labs Fleece Jacket",
+      "productPrice":"$49.99"
+    },
+    {
+      "productName":"Sauce Labs Onesie",
+      "productPrice":"$7.99"
+    }
+  ]
 }

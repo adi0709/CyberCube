@@ -22,7 +22,7 @@
             "name": "I navigate to the Website",
             "result": {
               "status": "passed",
-              "duration": 167000000
+              "duration": 100000000
             }
           },
           {
@@ -49,7 +49,7 @@
             "name": "I entered valid credential",
             "result": {
               "status": "passed",
-              "duration": 555000000
+              "duration": 553000000
             }
           },
           {
@@ -59,7 +59,7 @@
             "name": "User click on sign in button",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 86000000
             }
           },
           {
@@ -99,7 +99,7 @@
             "name": "I navigate to the Website",
             "result": {
               "status": "passed",
-              "duration": 107000000
+              "duration": 84000000
             }
           },
           {
@@ -126,7 +126,7 @@
             "name": "I entered valid credential",
             "result": {
               "status": "passed",
-              "duration": 560000000
+              "duration": 563000000
             }
           },
           {
@@ -146,7 +146,7 @@
             "name": "a product is clicked",
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 82000000
             }
           },
           {
@@ -156,7 +156,7 @@
             "name": "the product's information is displayed",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 11000000
             }
           }
         ]
@@ -176,7 +176,7 @@
             "name": "I navigate to the Website",
             "result": {
               "status": "passed",
-              "duration": 59000000
+              "duration": 88000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "I entered valid credential",
             "result": {
               "status": "passed",
-              "duration": 548000000
+              "duration": 565000000
             }
           },
           {
@@ -252,7 +252,7 @@
             "name": "I add below products to cart",
             "result": {
               "status": "passed",
-              "duration": 253000000
+              "duration": 248000000
             }
           },
           {
@@ -261,7 +261,8 @@
             "line": 24,
             "name": "the products get added to the cart",
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 100000000
             }
           }
         ]
