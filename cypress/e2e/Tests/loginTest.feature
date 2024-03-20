@@ -1,4 +1,4 @@
-Feature: I want to login into and logout of the site with valid data
+Feature: The user want to login into and logout of the site with valid data
 
   Background: The user navigates to the sauceDemo site
     Given the user navigate to the Website
@@ -20,9 +20,9 @@ Feature: I want to login into and logout of the site with valid data
 
 
   Scenario: Logout of the website
-    When valid credential are entered
+    And valid credential are entered
       | email         | password     |
       | standard_user | secret_sauce |
     And User click on sign in button
-    And the logout button is clicked
+    When the logout button is clicked
     Then the user is successfully logged out

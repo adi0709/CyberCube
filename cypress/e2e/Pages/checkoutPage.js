@@ -1,5 +1,7 @@
 import { orderInfo, products } from '../../fixtures/testData.json'
 class checkoutPage {
+
+  //validating the checkout and confirming the details
   validateCheckout(value) {
     cy.get('.header_secondary_container')
       .should('exist')
@@ -24,6 +26,7 @@ class checkoutPage {
     })
   }
 
+  //clicking the checkout button
   clickCheckout() {
     cy.get('[data-test="checkout"]')
       .should('exist')
@@ -32,6 +35,7 @@ class checkoutPage {
       .click()
   }
 
+  //Enter the details for checkout
   enterCheckoutInfo() {
     cy.get('[data-test="firstName"]')
       .should('exist')
@@ -49,6 +53,7 @@ class checkoutPage {
       .type(orderInfo.postalCode)
   }
 
+  //Clicking the continue button
   clickContinueButton() {
     cy.get('[data-test="continue"]')
       .should('exist')
@@ -57,6 +62,7 @@ class checkoutPage {
       .click()
   }
 
+  //confirming the details of the products ordered
   confirmCheckoutDetails() {
     cy.get('.cart_item').each(($row, index) => {
       cy.wrap($row).within(() => {
@@ -83,6 +89,7 @@ class checkoutPage {
       .click()
   }
 
+  //Validating the order was successfully placed
   validateOrderPlaced() {
     cy.get('.complete-header')
       .should('exist')

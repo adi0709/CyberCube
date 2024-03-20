@@ -1,5 +1,7 @@
 class productInfoPage {
-  validateProductInfoPage() {
+
+    //Validating the product info page of the selected product
+    validateProductInfoPage() {
     cy.url().should('include', '/inventory-item.html?id=0')
 
     cy.get('#inventory_item_container')

@@ -2,7 +2,7 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import login from '../../Pages/loginPage'
 Given('the user navigate to the Website', () => {
-  login.enterURL()
+  login.visitURL()
 })
 When('valid credential are entered', (datatable) => {
   datatable.hashes().forEach((element) => {
@@ -10,7 +10,7 @@ When('valid credential are entered', (datatable) => {
   })
 })
 And('User click on sign in button', () => {
-  login.clickSubmitButton()
+  login.clickLoginButton()
 })
 Then('The user is successfully logged in', () => {
   login.validateLogin()

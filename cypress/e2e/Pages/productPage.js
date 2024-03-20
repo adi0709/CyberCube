@@ -1,4 +1,6 @@
 class productPage {
+
+  //Validating all the 6  products are visible
   validateProducts() {
     cy.get('.inventory_item')
       .should('have.length', 6)
@@ -6,6 +8,7 @@ class productPage {
       .and('be.visible')
   }
 
+  //click the 2nd product
   clickProduct() {
     cy.get('.inventory_item')
       .eq(1)
@@ -14,6 +17,7 @@ class productPage {
       })
   }
 
+  //add product to the cart
   addProduct(dataTable) {
     cy.log('rows : ' + dataTable.rows())
 
@@ -29,6 +33,7 @@ class productPage {
     })
   }
 
+  //validating that the number on the cart increases after adding the products to the cart
   validateShoppingCartNumber(value) {
     cy.get('.shopping_cart_badge').should('contain.text', value)
     cy.get('.shopping_cart_link').click()

@@ -1,4 +1,4 @@
-Feature: I want to validate the functionalities of the product page
+Feature: The user wants to validate the functionalities of the product page
 
   Background: The user is successfully logged in
     Given the user navigate to the Website
