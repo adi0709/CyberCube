@@ -16,4 +16,4 @@ Make sure to update all the dependencies `npm install`
 Execute the UI tests by running the following commands
 `npm run cy:testReport`
 
-npm run test will execute the tests and a HTML test report will be displayed automatically.
+`npm run cy:testReport` will execute the tests and a HTML test report will be displayed automatically.
