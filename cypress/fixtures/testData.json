@@ -12,5 +12,10 @@
       "productName":"Sauce Labs Onesie",
       "productPrice":"$7.99"
     }
-  ]
+  ],
+  "orderInfo": {
+    "firstName": "Aditya",
+    "lastname": "Panwar",
+    "postalCode": "11002"
+  }
 }

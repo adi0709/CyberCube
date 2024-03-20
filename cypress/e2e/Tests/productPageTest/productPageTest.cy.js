@@ -1,28 +1,26 @@
 /// <reference types="cypress" />
-import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps"
-import product from "../../Pages/productPage";
-import productInfo from "../../Pages/productInfoPage";
-import checkoutPage from "../../Pages/checkoutPage";
+import { When, Then } from 'cypress-cucumber-preprocessor/steps'
+import product from '../../Pages/productPage'
+import productInfo from '../../Pages/productInfoPage'
+import checkoutPage from '../../Pages/checkoutPage'
 
-
-Then("the products are visible", () => {
-    product.validateProducts()
-});
-
-When('a product is clicked', (dataTable) => {
-    product.clickProduct()
-});
-Then ("the product's information is displayed",()=>{
-    productInfo.validateProductInfoPage()
+Then('the products are visible', () => {
+  product.validateProducts()
 })
 
-When('I add below products to cart', (dataTable) => {
-    product.addProduct((dataTable))
-});
+When('a product is clicked', (dataTable) => {
+  product.clickProduct()
+})
+Then("the product's information is displayed", () => {
+  productInfo.validateProductInfoPage()
+})
 
-Then("the products get added to the cart", ()=>{
-    cy.get(".shopping_cart_badge").should("contain.text", "3")
-    cy.get('.shopping_cart_link').click()
+When('the user add below products to cart', (dataTable) => {
+  product.addProduct(dataTable)
+})
 
-    checkoutPage.validateCheckout()
+Then('{int} products get added to the cart', (int) => {
+  cy.log(int)
+  product.validateShoppingCartNumber(int)
+  checkoutPage.validateCheckout(int)
 })

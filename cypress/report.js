@@ -1,10 +1,9 @@
-const report = require("multiple-cucumber-html-reporter");
+const report = require('multiple-cucumber-html-reporter')
 
 report.generate({
-    jsonDir: "./cypress/cucumber-json/",
-    reportPath: "./cypress/cucumber-report",
-    openReportInBrowser: {
-        Default: true
-    }
-
-});
+  jsonDir: './cypress/cucumber-json/',
+  reportPath: './cypress/cucumber-report',
+  openReportInBrowser: {
+    Default: true,
+  },
+})

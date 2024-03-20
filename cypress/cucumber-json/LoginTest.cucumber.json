@@ -1,17 +1,17 @@
 [
   {
     "keyword": "Feature",
-    "name": "I want to login into the site with valid data",
+    "name": "I want to login into and logout of the site with valid data",
     "line": 1,
-    "id": "i-want-to-login-into-the-site-with-valid-data",
+    "id": "i-want-to-login-into-and-logout-of-the-site-with-valid-data",
     "tags": [],
-    "uri": "LoginTest.feature",
+    "uri": "loginTest.feature",
     "elements": [
       {
-        "id": "i-want-to-login-into-the-site-with-valid-data;log-into-the-system-with-correct-user-data",
+        "id": "i-want-to-login-into-and-logout-of-the-site-with-valid-data;log-into-the-website-with-correct-user-data",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Log into the system with correct user data",
+        "line": 6,
+        "name": "Log into the website with correct user data",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -19,10 +19,10 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I navigate to the Website",
+            "name": "the user navigate to the Website",
             "result": {
               "status": "passed",
-              "duration": 534000000
+              "duration": 83000000
             }
           },
           {
@@ -45,51 +45,51 @@
               }
             ],
             "keyword": "When ",
-            "line": 5,
-            "name": "I entered valid credential",
+            "line": 7,
+            "name": "valid credential are entered",
             "result": {
               "status": "passed",
-              "duration": 563000000
+              "duration": 578000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
+            "line": 10,
             "name": "User click on sign in button",
             "result": {
               "status": "passed",
-              "duration": 88000000
+              "duration": 86000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
+            "line": 11,
             "name": "The user is successfully logged in",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 4000000
             }
           }
         ]
       },
       {
-        "id": "i-want-to-login-into-the-site-with-valid-data;log-into-the-system-with-incorrect-user-data",
+        "id": "i-want-to-login-into-and-logout-of-the-site-with-valid-data;log-into-the-website-with-incorrect-user-data",
         "keyword": "Scenario",
-        "line": 12,
-        "name": "Log into the system with Incorrect user data",
+        "line": 14,
+        "name": "Log into the website with Incorrect user data",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 13,
-            "name": "I navigate to the Website",
+            "line": 4,
+            "name": "the user navigate to the Website",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 68000000
             }
           },
           {
@@ -99,7 +99,7 @@
                   {
                     "cells": [
                       "email",
-                      "vpassword"
+                      "password"
                     ]
                   },
                   {
@@ -112,29 +112,108 @@
               }
             ],
             "keyword": "When ",
-            "line": 14,
-            "name": "I entered invalid credential",
+            "line": 15,
+            "name": "invalid credential are entered",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n\nhttps://on.cypress.io/type\n    at Context.type (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:114411:68)\n    at wrapped (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:138387:19)\nFrom Your Spec Code:\n    at LoginPage.enterUserNamePassword (cypress/e2e/Pages/loginPage.js:15:13)\n    at eval (cypress/e2e/Tests/LoginTest/loginTest.cy.js:21:14)\nat Array.forEach (<anonymous>)\n    at Context.eval (cypress/e2e/Tests/LoginTest/loginTest.cy.js:20:23)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 597000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
+            "line": 18,
             "name": "User click on sign in button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 87000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 19,
             "name": "The user is unable to login",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "i-want-to-login-into-and-logout-of-the-site-with-valid-data;logout-of-the-website",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Logout of the website",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user navigate to the Website",
+            "result": {
+              "status": "passed",
+              "duration": 75000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "standard_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 23,
+            "name": "valid credential are entered",
+            "result": {
+              "status": "passed",
+              "duration": 581000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "User click on sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "the logout button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 452000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the user is successfully logged out",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
             }
           }
         ]

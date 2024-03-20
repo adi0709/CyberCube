@@ -19,10 +19,10 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I navigate to the Website",
+            "name": "the user navigate to the Website",
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 76000000
             }
           },
           {
@@ -46,10 +46,10 @@
             ],
             "keyword": "When ",
             "line": 5,
-            "name": "I entered valid credential",
+            "name": "valid credential are entered",
             "result": {
               "status": "passed",
-              "duration": 553000000
+              "duration": 570000000
             }
           },
           {
@@ -79,7 +79,7 @@
             "name": "the products are visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 9000000
             }
           }
         ]
@@ -96,10 +96,10 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I navigate to the Website",
+            "name": "the user navigate to the Website",
             "result": {
               "status": "passed",
-              "duration": 84000000
+              "duration": 64000000
             }
           },
           {
@@ -123,10 +123,10 @@
             ],
             "keyword": "When ",
             "line": 5,
-            "name": "I entered valid credential",
+            "name": "valid credential are entered",
             "result": {
               "status": "passed",
-              "duration": 563000000
+              "duration": 575000000
             }
           },
           {
@@ -136,7 +136,7 @@
             "name": "User click on sign in button",
             "result": {
               "status": "passed",
-              "duration": 84000000
+              "duration": 98000000
             }
           },
           {
@@ -146,7 +146,7 @@
             "name": "a product is clicked",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 84000000
             }
           },
           {
@@ -173,10 +173,10 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I navigate to the Website",
+            "name": "the user navigate to the Website",
             "result": {
               "status": "passed",
-              "duration": 88000000
+              "duration": 65000000
             }
           },
           {
@@ -200,10 +200,10 @@
             ],
             "keyword": "When ",
             "line": 5,
-            "name": "I entered valid credential",
+            "name": "valid credential are entered",
             "result": {
               "status": "passed",
-              "duration": 565000000
+              "duration": 581000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "User click on sign in button",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 86000000
             }
           },
           {
@@ -249,20 +249,20 @@
             ],
             "keyword": "When ",
             "line": 19,
-            "name": "I add below products to cart",
+            "name": "the user add below products to cart",
             "result": {
               "status": "passed",
-              "duration": 248000000
+              "duration": 253000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 24,
-            "name": "the products get added to the cart",
+            "name": "3 products get added to the cart",
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 108000000
             }
           }
         ]
