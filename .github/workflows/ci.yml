@@ -2,7 +2,7 @@ name: End-to-end tests
 on: push
 
 env:
-  CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+  CYPRESS_RECORD_KEY: ff6b4c7b-348d-4937-a56c-d5bb6531755f
   # Recommended: pass the GitHub token lets this action correctly
   # determine the unique run id necessary to re-run the checks
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
