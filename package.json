@@ -2,7 +2,7 @@
   "scripts": {
     "cy:report": "node ./cypress/report.js",
     "cy:testReport": "npx cypress run --browser chrome --spec ./cypress/e2e/Tests/**.feature ; npm run cy:report",
-    "cy:recordTests":"npx cypress run --record --key ff6b4c7b-348d-4937-a56c-d5bb6531755f"
+    "cy:recordTests":"npx cypress run --browser chrome --spec ./cypress/e2e/Tests/**.feature --record --key ff6b4c7b-348d-4937-a56c-d5bb6531755f"
   },
   "devDependencies": {
     "cypress": "^13.7.0",
